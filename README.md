@@ -45,11 +45,9 @@ This will be different depending on FW version and maybe device. The icons have 
 -The size of the image we have tested has a max of: Vertical:128px, Horizontal:106px
 -Play with the size until you feel it fits for you
 1. Plug in your PocketBook to your PC or SSH/FTP
-2. If you plugged into PC, navigate to ROOT/system/. If SSH, cd /mnt/ext1/system/
-3. create a new folder in /system/ called resources
-4. Go into the newly created resources folder (must be lower case)
-5. create a new folder in resources called Line (L must be uppercase)
-6. Copy the two files from the attached desktop_app_koreader.zip into the Lines folder
+2. If you plugged into PC, navigate to ROOT/applications/. If SSH, cd /mnt/ext1/applications/
+3. create a new folder in /applications/ called icons
+4. Copy the two files from the attached desktop_app_koreader.zip into the applications/icons/ folder
 --Notes--
 You can rename these file if you wish
 One file is for the static image, the other file that ends in _f is for when you click this icon
