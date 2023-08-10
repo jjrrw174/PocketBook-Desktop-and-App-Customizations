@@ -1,0 +1,5 @@
+English
+@koreader=KOReader
+@pbterm=PB Term
+@Jailbreak=Jail Break
+@PbDbFixer= Database Fix

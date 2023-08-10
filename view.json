@@ -1,0 +1,69 @@
+{
+	"version": "5",
+	"applications": {
+		"U_koreader": {
+			"path": "/mnt/ext1/applications/koreader.app",
+			"title": "KOReader",
+			"icon": "/mnt/ext1/applications/icons/desktop_app_koreader.bmp",
+			"focused_icon": "/mnt/ext1/applications/icons/desktop_app_koreader_f.bmp"
+		},
+		"_comment": [
+			"Fields - application key id, must start from \"U_\" for user application\n",
+			"Support application subfields:\n",
+			"> \"path\" - path to application (Required for user apps. Support apps only from userspace)\n",
+			"> \"param\" - \"string\" or \"array of string\" of params for application (Optional, can set only for user apps)\n",
+			"> \"title\" - user friendly application title (Required for user apps)\n",
+			"> \"icon\" - icon name in theme or object path (Optional)\n",
+			"> \"focused icon\" - name of icon with focus in theme or object path (Optional)\n",
+			"> \"visible\" - show application in application list (Optional) (\"1\" as default) (user can change only on \"0\" for PB-applications)\n",
+			"Support fields values type:\n",
+			"> \"string value\" - end value\n",
+			"> \"object path\" - end value { \"path\": \"<path on user space>\" }\n",
+			"Examples:\n",
+			"1) \"U_MyApp\": {\n",
+			"     \"path\": \"applications/my_app.app\", \n",
+			"     \"param\": [\"-a\", \"25\"],\n",
+			"     \"title\": \"My application\",\n",
+			"     \"icon\": { \"path\": \"applications/icons/my_app_icon.bmp\" },\n",
+			"     \"focused_icon\": \"desktop_app_calc_f.bmp\"\n",
+			"   }\n",
+			"2) \"PB_Calc\": {\n",
+			"     \"title\": \"User calculator\",\n",
+			"     \"icon\": { \"path\": \"applications/icons/my_calc_icon.bmp\" },\n",
+			"     \"focused_icon\": { \"path\": \"applications/icons/my_calc_icon_f.bmp\" }\n",
+			"   }\n",
+			"end."
+		]	
+	},
+	"view": {
+		"_comment": [
+			"\"groups\" - array of application groups\n",
+			"Element of groups array support:\n",
+			"> \"title\" - title of group (Required)\n",
+			"> \"apps\" - array of applications (Optional)\n",
+			"> \"sort\" - applications sort type (\"title\", \"fixed\" or special property of applications) (Optional, \"title\" by default)\n",
+			"end."
+		],
+		"groups": [{
+				"title": "@General",
+				"sort": "title",
+				"apps": [
+					"PB_Dictionary",
+					"PB_Library",
+					"PB_Settings",
+					"U_koreader"
+				]
+			},
+			{
+				"title": "@Services",
+				"sort": "title",
+				"apps": []
+			},
+			{
+				"title": "@Games",
+				"sort": "title",
+				"apps": []
+			}
+		]
+	}
+}
