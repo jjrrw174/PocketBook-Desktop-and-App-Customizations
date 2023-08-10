@@ -22,6 +22,7 @@ Many of the custom apps installed to a Pocketbook appear as @AppName(Koreader, P
    English
    @koreader=KOReader
 5. Save the file, unplug or reboot your PocketBook to view the changes.
+   
 --Notes--
 This can be done for ANY custom app. Please see the attached en.txt file in this repo
 
@@ -32,6 +33,7 @@ I have alot of apps I don't use on my PocketBook. While I don't want to uninstal
 3. Open the view.json file
 4. Remove a "AppName" entry from one of the groups. This will hide the application from view.
 5. Save the file, unplug or reboot your Pocketbook to view the changes
+   
 --Notes--
 It's important to follow the JSON syntax. If you aren't confident in your changes you can copy the file contents into a JSON Validator. I use https://jsonlint.com/
 If the JSON syntax is wrong, no big deal! Your device will still start but you may see an error popup
@@ -48,11 +50,13 @@ This will be different depending on FW version and maybe device. The icons have 
 2. If you plugged into PC, navigate to ROOT/applications/. If SSH, cd /mnt/ext1/applications/
 3. create a new folder in /applications/ called icons
 4. Copy the two files from the attached desktop_app_koreader.zip into the applications/icons/ folder
+   
 --Notes--
 You can rename these file if you wish
 One file is for the static image, the other file that ends in _f is for when you click this icon
+
 ### Changing the App Icon
-1. Confirm that you have the two KOReader bmp image files in \system\resources\Line
+1. Confirm that you have the two KOReader bmp image files in /applications/icons/
 2. Once confirmed, navigate to /system/config/desktop/
 3. Open the view.json file
 4. Add the following text between the applications and _comment key
@@ -65,6 +69,7 @@ One file is for the static image, the other file that ends in _f is for when you
 5. Add the following entry in one of the groups(I used the @General group)
    "U_koreader"
 6. Save the file, unplug or reboot your Pocketbook to view the changes
+   
    --Notes--
    The JSON keys can be explained as:
      path - Location to the KOReader app on your file system
@@ -79,6 +84,7 @@ One file is for the static image, the other file that ends in _f is for when you
 # Other changes I have 
 ## Adding sync ability in PocketBook Library view with KOReader book progress
 Please go to https://github.com/ckilb/koreader-pocketbook-sync. This user greatly increased the usability of my scrpit
+
 ## Meta data not appearing correctly in PocketBook Library view
 Please go to https://git.rustysoft.de/martin/PbDbFixer
 
