@@ -35,7 +35,7 @@ I have alot of apps I don't use on my PocketBook. While I don't want to uninstal
 --Notes--
 It's important to follow the JSON syntax. If you aren't confident in your changes you can copy the file contents into a JSON Validator. I use https://jsonlint.com/
 If the JSON syntax is wrong, no big deal! Your device will still start but you may see an error popup
-The only icons I have in view are Dictionary, Library, Settings and my custom apps. Please see the attached view_before_custom_apps.json file in this repo.
+The only icons I have in view are Dictionary, Library, Settings and my custom apps. Please see the attached view.json file in this repo. Ignore the U_KOReader bits for now
 
 ## Adding custom app icons images
 This will be different depending on FW version and maybe device. The icons have some specifics properties
@@ -76,6 +76,7 @@ One file is for the static image, the other file that ends in _f is for when you
    The U_ part in U_koreader is mandatory
    After the U_ is HAS TO match the name of the app in ROOT/applications
    This can be done for any custom app
+   For an example please see the attached view.json file in this repo.
 
 # Other changes I have 
 ## Adding sync ability in PocketBook Library view with KOReader book progress
