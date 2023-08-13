@@ -84,6 +84,14 @@ One file is for the static image, the other file that ends in _f is for when you
    This can be done for any custom app  
    For an example please see the attached view.json file in this repo.  
 
+# Making a custom lock standy image or setting the KOReader cover image as the lock standy by image
+I was able to make the KOReader cover image power off image to lock image.
+
+Create the bmp file at /ext1/system/resources/Line/"taskmgr_lock_background_landscape.bmp following the specs of at the link a user posted (http://cyfranek.booklikes.com/post/5815379/poradnik-wlasna-grafika-usypiania-dla-czytnikow-pocketbook). 
+
+When I created this image I made the entire picture just the transparent color described in the blog post.
+
+Open KoReader and point the cover image plugin to this file created.
 # Other changes I have 
 ## Adding sync ability in PocketBook Library view with KOReader book progress
 Please go to https://github.com/ckilb/koreader-pocketbook-sync. This user greatly increased the usability of my scrpit
