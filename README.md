@@ -69,9 +69,10 @@ One file is for the static image, the other file that ends in _f is for when you
 	       "focused_icon": "/mnt/ext1/applications/icons/desktop_app_koreader_f.bmp"  
 	},  
 
-6. Add the following entry in one of the groups(I used the @General group)  
-"U_koreader"
-8. Save the file, unplug or reboot your Pocketbook to view the changes
+5. Add the app icon to the menu
+   1. To add it to the Apps menu, add the following entry in one of the groups (I used the @General group) in view.json: `"U_koreader"`.
+   2. To add it to the dock on the home screen, add the following to `apps.json` or replace on of the existing `PB_` apps: `{"id":"U_koreader"}`. Do not forget to also add a comma before or after depending on where you want the icon.
+6. Save the file, unplug or reboot your Pocketbook to view the changes
    
    --Notes--  
    The JSON keys can be explained as:  
